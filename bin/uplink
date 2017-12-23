@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/node'
+require_relative '../lib/server'
+require_relative '../modules/networking'
+
+Uplink::Networking.bootstrap
+Uplink::Server.start
